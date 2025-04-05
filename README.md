@@ -1,5 +1,9 @@
-# benchP
+# benchP 
 benchP is a header file for program testing utilties. You can use it to compare program outputs and times!
+
+### Why use it? 
+benchP directly contacts the Windows kernel to run your program. This means we do not use the resources created for powershell to run your program. 
+Additionally, all reading and writing is performed before and after your program is executed to give an accurate measurement of your execution time without I/O delay.
 
 To get started its probably easiest to clone this repository and modify bootstrapBenchmarkV4.cpp for your needs.
 Alternatively you can copy the benchP.hpp and benchP.cpp into your visual studio project. 
