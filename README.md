@@ -51,10 +51,16 @@ printing the object to the ostream will print the executable file, args, cpu tim
 ```bash
 E:\bootstrapBenchmark\bootstrapBenchmarkV4\stockstatsGarth.exe AAPL.csv  CPU time: 15.00ms. Wall time: 14.90ms.
 ```
-
+## Program Output and Comparison
 
 ```cpp
 compareOutput(profProgram, myProgram);
 ```
 ![Alt text](compareOutputScreenshot.png "Output")
+
+### Write the Program output to std::cout
+
+```cpp
+std::cout << myProgram.buffer.str() << std::endl;                 
+```
 
