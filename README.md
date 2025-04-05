@@ -36,9 +36,25 @@ int main(int argc, char * argv[])
     //std::cout << profProgram.buffer.str() << std::endl;
     // we can print the programs output by calling the programs public stringstream buffer instance and printing it as a string. 
 
-    // this is a custom function written 
+    // this is a custom function written to show the output differences between p1, and p2.
     compareOutput(profProgram, myProgram);
 
     return 0;
 }
 ```
+
+## writing benchP object to ostream
+```cpp
+    std::cout << "myProgram" << std::endl << myProgram << std::endl;
+```
+printing the object to the ostream will print the executable file, args, cpu time used, and Wall time used.
+```bash
+E:\bootstrapBenchmark\bootstrapBenchmarkV4\stockstatsGarth.exe AAPL.csv  CPU time: 15.00ms. Wall time: 14.90ms.
+```
+
+
+```cpp
+compareOutput(profProgram, myProgram);
+```
+![Alt text](compareOutputScreenshot.png "Output")
+
